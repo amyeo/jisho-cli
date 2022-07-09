@@ -12,6 +12,8 @@ Uses JMdict as a data source.
 ## Fast startup and lookup
 When `command.py` is executed, the `LOOKUP> ` prompt loads **instantly**. Due to a **very simple indexing and lookup algorithm**, word lookups also take less than 0.01 seconds of system time to complete (practical/average case).
 
+The tradeoff here is memory usage. During lookup, it can be from 77 MiB - 157 MiB depending on the query. This is still an improvement from outright loading the entire database into memory, which consumes ~5 GiB of RAM based on my testing. (which is why this program was created)
+
 # Dependencies
 ```
 rich
