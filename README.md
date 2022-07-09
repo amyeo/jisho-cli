@@ -1,5 +1,6 @@
 # jisho-cli
 JP to EN dictionary that is simple, fast and local.
+
 ![alt text](https://github.com/amyeo/jisho-cli/blob/master/screenshot.png?raw=true)
 
 Uses JMdict as a data source.
