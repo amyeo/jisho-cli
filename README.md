@@ -1,5 +1,7 @@
 # jisho-cli
-JP to EN dictionary that is 100% local
+JP to EN dictionary that is simple, fast and local.
+
+Uses JMdict as a data source.
 
 # What makes it different?
 **All** the source code, including the print statements and console formatting only adds up to ~250 lines of code. There are only 2 files: bootstrap.py and command.py
