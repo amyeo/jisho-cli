@@ -130,7 +130,12 @@ while True:
     display_results(results[:1])
     console.print(f"{len(results)} results in {res:.15f} seconds.",style="dim")
     if len(results) > 1:
-        display_more = Confirm.ask("Showing only [bold red]first[/]. Display all results?")
+        try:
+            display_more = Confirm.ask("Showing only [bold red]first[/]. Display all results?")
+        except (EOFError, KeyboardInterrupt) as e:
+            print("Bye")
+            db.close()
+            exit()
         if display_more:
             with console.pager(styles=True):
                 display_results(results)

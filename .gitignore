@@ -130,3 +130,5 @@ dmypy.json
 
 JMdict
 JMdict.gz
+word_database.db
+word_index.pickle
