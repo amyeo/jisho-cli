@@ -23,6 +23,7 @@ My proposed solution for this is dead simple: shrink the list size from 100,000+
 # Dependencies
 ```
 rich
+bson
 ```
 
 # Pager
