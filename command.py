@@ -97,7 +97,7 @@ while True:
         console.print("[bold red]ERROR[/]: No parsable characters in input. (Example valid input: 電気 or 気?車)")
         continue
 
-    results = [bson.BSON.decode(db[str(r)]) for r in results]
+    results = [bson.loads(db[str(r)]) for r in results]
 
     """
     deal with 2 types of searches here
